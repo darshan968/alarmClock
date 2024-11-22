@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Header>
+        <h1>Alarm clock</h1>
+    </Header>
+    <main>
+        <div class="container">
+            <h2 id="main-clock">
+            </h2>
+            <div class="alarm-container">
+                <div class="alarm-form-part">
+
+                    <input type="number" name="hour" min="0" max="12" title="hour" id="hour" value="00">
+                    <input type="number" name="minute" min="0" max="59" title="minute" id="minute" value="00">
+                    <input type="number" name="second" min="0" max="59" title="second" id="second" value="00">
+                    <select name="meridiem" id="meridiem" title="meridiem">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="alarm-btn-container">
+                    <button role="button" aria-label="setAlarm" aria-describedby="setAlarm" id="set-alarm">Set
+                        Alarm</button>
+                </div>
+            </div>
+            <div class="alarm-list-container">
+                <h2 id="alarm-list-title">
+                    Alarms
+                </h2>
+            </div>
+            <ul id="alarm-list">
+                <li>
+                    <h3>test</h3>
+                    <div class="dsms-alarm-btn-container">
+                        <button role="button" aria-label="dsmAlarm" aria-describedby="dsmAlarm" id="dsm-alarm">Dismiss
+                            Alarm</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
