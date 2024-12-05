@@ -7,11 +7,10 @@
 }
 /* Apply to the entire page */
 body {
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #876767 #f1f1f1; /* For Firefox */
+    scrollbar-width: thin; 
+    scrollbar-color: #876767 #f1f1f1; 
   }
   
-  /* For WebKit browsers like Chrome, Edge, and Safari */
   body::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
   }
